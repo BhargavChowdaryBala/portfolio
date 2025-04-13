@@ -1,0 +1,314 @@
+.edu-item {
+  background-color: #f9f3f300;
+}
+
+
+nav {
+  background-color: #1f2730;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  margin-bottom: 5;
+  margin-top: 5;
+}
+
+nav ul {
+
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 50px;
+  transition: 0.5s;
+  flex-wrap: wrap;
+}
+
+nav ul li a:hover {
+
+  text-shadow: 0px 0px 10px #fdfefe;
+  text-transform: uppercase;
+
+}
+
+header {
+  background-color: #fcf3cf;
+  text-align: center;
+  padding: 10px 0 0 0;
+  border: 10px;
+  border-style: solid;
+  border-color: #566573;
+  border-radius: 30px;
+  transition: 2s;
+  box-sizing: border-box;
+  height: 30vh;
+  cursor: pointer;
+
+}
+
+
+header:hover {
+
+  #image {
+    visibility: visible;
+  }
+}
+
+header h1 {
+  position: relative;
+  top: -150px;
+}
+
+header p {
+  position: relative;
+  bottom: 130px;
+}
+
+.edu-item_projects {
+  list-style: none;
+  /* Removes the bullets */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+  font-family: segeoUI, Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #808b96;
+  width: 100%;
+
+}
+
+.section {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  margin: 20px;
+
+}
+
+.section h2 {
+  color: #3498db;
+  border-bottom: 2px solid #34799b;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#image {
+
+  border-radius: 50%;
+  position: relative;
+  left: 400px;
+  bottom: 0vh;
+  height: 150px;
+  width: 150px;
+  visibility: hidden;
+}
+
+#education h3,
+#skills h1 {
+  margin-left: 30px;
+}
+
+#education p,
+#projects li,
+#internships li,
+#skills li,
+#Hobbies li {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 0.5rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: relative;
+  left: 500px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+
+  body,
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image {
+    position: absolute;
+    left: 10px;
+    /* Adjust to position it properly */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    /* Small round size */
+    width: 50px;
+    border-radius: 50%;
+    visibility: visible;
+    /* Ensure visibility */
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  nav ul li:first-child {
+    margin-left: 280px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 10px;
+    margin-right: 10px;
+  }
+
+  .contact-form {
+    width: 90%;
+    left: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #fcf3cf;
+    border-radius: 30px;
+  }
+
+  #image {
+    height: 70px;
+    /* Slightly bigger for better visibility */
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 27px;
+    /* Space from the left edge */
+    flex-shrink: 0;
+    position: relative;
+    left: -150px;
+    top: 40px;
+    /* Prevents image from shrinking */
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    /* Space between image and text */
+    flex-grow: 1;
+    height: 20vh;
+    /* Allows text to take up remaining space */
+  }
+
+  header h1 {
+    font-size: 20px;
+    /* Adjusted font size */
+    margin: 0;
+    position: relative;
+    top: -50px;
+    left: 20px;
+    white-space: nowrap;
+    /* Prevents breaking into multiple lines */
+    color: #1f2730;
+  }
+
+  header p {
+    font-size: 14px;
+    /* Adjust paragraph font size */
+    margin: 10px 0 0 0;
+    /* Adds space below h1 */
+    white-space: normal;
+    /* Allows paragraph to wrap normally */
+    color: #566573;
+    position: relative;
+    top: -30px;
+  }
+
+  nav ul {
+    overflow: auto;
+    overflow-y: hidden;
+  }
+
+  nav ul li a {
+    margin: 2px 9px;
+  }
+}
